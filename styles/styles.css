@@ -1,70 +1,92 @@
-body {
-    font-family: Arial, sans-serif;
+/* styles/styles.css */
+
+/* Reset some default browser styles */
+* {
     margin: 0;
     padding: 0;
-    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-}
-
-header {
-    background-color: #4CAF50;
-    color: white;
+    color: #333;
     padding: 20px;
-    text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.hero {
-    background: url('https://source.unsplash.com/1600x900/?electric-vehicle,charging') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.register-button {
-    background-color: #fff;
-    color: #4CAF50;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-.register-button:hover {
-    background-color: #4CAF50;
-    color: white;
-}
-
-section {
+/* Center the main container */
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
     padding: 20px;
-    margin: 20px;
-    background-color: white;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-footer {
+/* Styles for headings */
+h1, h2 {
+    margin-bottom: 20px;
     text-align: center;
+}
+
+/* Styles for form elements */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+select {
     padding: 10px;
-    background-color: #4CAF50;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button styles */
+button {
+    padding: 10px;
+    background-color: #28a745;
     color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Link styles */
+a {
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
 }
