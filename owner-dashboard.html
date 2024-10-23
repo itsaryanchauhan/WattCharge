@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Owner Dashboard</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, EV Owner!</h1>
+        
+        <div id="profile">
+            <h2>Your Profile</h2>
+            <p><strong>Email:</strong> <span id="ownerEmail"></span></p>
+        </div>
+        
+        <div id="charging-stations">
+            <h2>Your Charging Stations</h2>
+            <div id="stationsList">
+                <!-- List of charging stations will appear here -->
+            </div>
+            <input type="text" id="locationInput" placeholder="Location" required>
+            <input type="number" id="priceInput" placeholder="Price per Hour" required>
+            <button id="addStationButton">Add Charging Station</button>
+        </div>
+    </div>
+
+    <script src="src/owner.js"></script>
+</body>
+</html>
