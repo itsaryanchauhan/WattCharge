@@ -2,69 +2,69 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: #333;
     background-color: #f4f4f4;
 }
 
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-h1, h2 {
-    color: #333;
-}
-
-input[type="text"],
-input[type="number"] {
-    width: calc(100% - 22px);
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-button {
-    padding: 10px;
-    background-color: #28a745;
+header {
+    background-color: #4CAF50;
     color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #218838;
-}
-.error-container {
-    max-width: 600px;
-    margin: 50px auto;
     padding: 20px;
     text-align: center;
-    background: #f8d7da;
-    border: 1px solid #f5c6cb;
-    border-radius: 8px;
 }
 
-h1 {
-    color: #721c24;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-p {
-    color: #721c24;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-button {
-    padding: 10px 15px;
-    margin: 10px;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?electric-vehicle,charging') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.register-button {
+    background-color: #fff;
+    color: #4CAF50;
+    padding: 10px 20px;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
-button:hover {
-    opacity: 0.8;
+.register-button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
